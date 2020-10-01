@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+div.row>div div {
+	background-color: gray;
+	border: 3px black solid;
+	position: relative; /* Non Static Position set */
+
+}
+div.row {
+	width: 100%;
+	align-content: center;
+	padding: 2%;
+	/*display: flex;*/
+}
+.col1,.col2,.col3 {
+	padding: 20px; 
+}
+.heading{
+	margin: 30px;
+	margin-bottom: 70px;
+	text-align:center;
+}
+
+/*For large devices*/
+@media (min-width: 992px){
+	.col-lg-3{
+		float : left;
+		width: 33.33%;
+	}
+}
+/*For medium devices*/
+@media (min-width: 768px) and (max-width: 991px){
+	.col-md-2{
+		float:left;
+		width: 50%;
+	}
+	.col-md-12{
+		float: left;
+		width: 100%;
+	}
+}
+/*For small devices*/
+@media (max-width: 767px){
+	.col-sm-12{
+		float:left;
+		width: 100%;
+	}
+}
+h2.item1 {
+	text-align: right;
+}
+h2.item2 {
+	text-align: right;
+}
+h2.item3 {
+	text-align: right;	
+}
+
+section {
+	padding: 2%;
+}
+span.i1 {
+	background-color: orange;
+	display: inline-block;
+	padding: 2%;
+	border: 3px black solid;
+}
+
+span.i2 {
+	background-color: green;
+	display: inline-block;
+	padding: 2%;
+	border: 3px black solid;
+}
+
+span.i3 {
+	background-color: skyblue;
+	display: inline-block;
+	padding: 2%;
+	border: 3px black solid;
+}
